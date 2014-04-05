@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6D5EB9A18EDC8D5004835D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9918EDC8D5004835D7 /* Foundation.framework */; };
+		B6D5EB9C18EDC8D5004835D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9B18EDC8D5004835D7 /* CoreGraphics.framework */; };
+		B6D5EB9E18EDC8D5004835D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9D18EDC8D5004835D7 /* UIKit.framework */; };
+		B6D5EBA418EDC8D5004835D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6D5EBA218EDC8D5004835D7 /* InfoPlist.strings */; };
+		B6D5EBA618EDC8D5004835D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5EBA518EDC8D5004835D7 /* main.m */; };
+		B6D5EBAA18EDC8D5004835D7 /* WNKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5EBA918EDC8D5004835D7 /* WNKAppDelegate.m */; };
+		B6D5EBAD18EDC8D5004835D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5EBAB18EDC8D5004835D7 /* Main.storyboard */; };
+		B6D5EBB018EDC8D5004835D7 /* WNKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5EBAF18EDC8D5004835D7 /* WNKFirstViewController.m */; };
+		B6D5EBB318EDC8D5004835D7 /* WNKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5EBB218EDC8D5004835D7 /* WNKSecondViewController.m */; };
+		B6D5EBB518EDC8D5004835D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D5EBB418EDC8D5004835D7 /* Images.xcassets */; };
+		B6D5EBBC18EDC8D5004835D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EBBB18EDC8D5004835D7 /* XCTest.framework */; };
+		B6D5EBBD18EDC8D5004835D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9918EDC8D5004835D7 /* Foundation.framework */; };
+		B6D5EBBE18EDC8D5004835D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9D18EDC8D5004835D7 /* UIKit.framework */; };
+		B6D5EBC618EDC8D5004835D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6D5EBC418EDC8D5004835D7 /* InfoPlist.strings */; };
+		B6D5EBC818EDC8D5004835D7 /* WinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5EBC718EDC8D5004835D7 /* WinkTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6D5EBBF18EDC8D5004835D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D5EB8E18EDC8D5004835D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D5EB9518EDC8D5004835D7;
+			remoteInfo = Wink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6D5EB9618EDC8D5004835D7 /* Wink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D5EB9918EDC8D5004835D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6D5EB9B18EDC8D5004835D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6D5EB9D18EDC8D5004835D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6D5EBA118EDC8D5004835D7 /* Wink-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wink-Info.plist"; sourceTree = "<group>"; };
+		B6D5EBA318EDC8D5004835D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6D5EBA518EDC8D5004835D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6D5EBA718EDC8D5004835D7 /* Wink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wink-Prefix.pch"; sourceTree = "<group>"; };
+		B6D5EBA818EDC8D5004835D7 /* WNKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNKAppDelegate.h; sourceTree = "<group>"; };
+		B6D5EBA918EDC8D5004835D7 /* WNKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNKAppDelegate.m; sourceTree = "<group>"; };
+		B6D5EBAC18EDC8D5004835D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6D5EBAE18EDC8D5004835D7 /* WNKFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNKFirstViewController.h; sourceTree = "<group>"; };
+		B6D5EBAF18EDC8D5004835D7 /* WNKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNKFirstViewController.m; sourceTree = "<group>"; };
+		B6D5EBB118EDC8D5004835D7 /* WNKSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNKSecondViewController.h; sourceTree = "<group>"; };
+		B6D5EBB218EDC8D5004835D7 /* WNKSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNKSecondViewController.m; sourceTree = "<group>"; };
+		B6D5EBB418EDC8D5004835D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6D5EBBA18EDC8D5004835D7 /* WinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D5EBBB18EDC8D5004835D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B6D5EBC318EDC8D5004835D7 /* WinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinkTests-Info.plist"; sourceTree = "<group>"; };
+		B6D5EBC518EDC8D5004835D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6D5EBC718EDC8D5004835D7 /* WinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinkTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D5EB9318EDC8D5004835D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5EB9C18EDC8D5004835D7 /* CoreGraphics.framework in Frameworks */,
+				B6D5EB9E18EDC8D5004835D7 /* UIKit.framework in Frameworks */,
+				B6D5EB9A18EDC8D5004835D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5EBB718EDC8D5004835D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5EBBC18EDC8D5004835D7 /* XCTest.framework in Frameworks */,
+				B6D5EBBE18EDC8D5004835D7 /* UIKit.framework in Frameworks */,
+				B6D5EBBD18EDC8D5004835D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6D5EB8D18EDC8D5004835D7 = {
+			isa = PBXGroup;
+			children = (
+				B6D5EB9F18EDC8D5004835D7 /* Wink */,
+				B6D5EBC118EDC8D5004835D7 /* WinkTests */,
+				B6D5EB9818EDC8D5004835D7 /* Frameworks */,
+				B6D5EB9718EDC8D5004835D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D5EB9718EDC8D5004835D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5EB9618EDC8D5004835D7 /* Wink.app */,
+				B6D5EBBA18EDC8D5004835D7 /* WinkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D5EB9818EDC8D5004835D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5EB9918EDC8D5004835D7 /* Foundation.framework */,
+				B6D5EB9B18EDC8D5004835D7 /* CoreGraphics.framework */,
+				B6D5EB9D18EDC8D5004835D7 /* UIKit.framework */,
+				B6D5EBBB18EDC8D5004835D7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6D5EB9F18EDC8D5004835D7 /* Wink */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5EBA818EDC8D5004835D7 /* WNKAppDelegate.h */,
+				B6D5EBA918EDC8D5004835D7 /* WNKAppDelegate.m */,
+				B6D5EBAB18EDC8D5004835D7 /* Main.storyboard */,
+				B6D5EBAE18EDC8D5004835D7 /* WNKFirstViewController.h */,
+				B6D5EBAF18EDC8D5004835D7 /* WNKFirstViewController.m */,
+				B6D5EBB118EDC8D5004835D7 /* WNKSecondViewController.h */,
+				B6D5EBB218EDC8D5004835D7 /* WNKSecondViewController.m */,
+				B6D5EBB418EDC8D5004835D7 /* Images.xcassets */,
+				B6D5EBA018EDC8D5004835D7 /* Supporting Files */,
+			);
+			path = Wink;
+			sourceTree = "<group>";
+		};
+		B6D5EBA018EDC8D5004835D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5EBA118EDC8D5004835D7 /* Wink-Info.plist */,
+				B6D5EBA218EDC8D5004835D7 /* InfoPlist.strings */,
+				B6D5EBA518EDC8D5004835D7 /* main.m */,
+				B6D5EBA718EDC8D5004835D7 /* Wink-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6D5EBC118EDC8D5004835D7 /* WinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5EBC718EDC8D5004835D7 /* WinkTests.m */,
+				B6D5EBC218EDC8D5004835D7 /* Supporting Files */,
+			);
+			path = WinkTests;
+			sourceTree = "<group>";
+		};
+		B6D5EBC218EDC8D5004835D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5EBC318EDC8D5004835D7 /* WinkTests-Info.plist */,
+				B6D5EBC418EDC8D5004835D7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D5EB9518EDC8D5004835D7 /* Wink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D5EBCB18EDC8D5004835D7 /* Build configuration list for PBXNativeTarget "Wink" */;
+			buildPhases = (
+				B6D5EB9218EDC8D5004835D7 /* Sources */,
+				B6D5EB9318EDC8D5004835D7 /* Frameworks */,
+				B6D5EB9418EDC8D5004835D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wink;
+			productName = Wink;
+			productReference = B6D5EB9618EDC8D5004835D7 /* Wink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6D5EBB918EDC8D5004835D7 /* WinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D5EBCE18EDC8D5004835D7 /* Build configuration list for PBXNativeTarget "WinkTests" */;
+			buildPhases = (
+				B6D5EBB618EDC8D5004835D7 /* Sources */,
+				B6D5EBB718EDC8D5004835D7 /* Frameworks */,
+				B6D5EBB818EDC8D5004835D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D5EBC018EDC8D5004835D7 /* PBXTargetDependency */,
+			);
+			name = WinkTests;
+			productName = WinkTests;
+			productReference = B6D5EBBA18EDC8D5004835D7 /* WinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D5EB8E18EDC8D5004835D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WNK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "SweetPixel Studios";
+				TargetAttributes = {
+					B6D5EBB918EDC8D5004835D7 = {
+						TestTargetID = B6D5EB9518EDC8D5004835D7;
+					};
+				};
+			};
+			buildConfigurationList = B6D5EB9118EDC8D5004835D7 /* Build configuration list for PBXProject "Wink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D5EB8D18EDC8D5004835D7;
+			productRefGroup = B6D5EB9718EDC8D5004835D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D5EB9518EDC8D5004835D7 /* Wink */,
+				B6D5EBB918EDC8D5004835D7 /* WinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D5EB9418EDC8D5004835D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5EBB518EDC8D5004835D7 /* Images.xcassets in Resources */,
+				B6D5EBA418EDC8D5004835D7 /* InfoPlist.strings in Resources */,
+				B6D5EBAD18EDC8D5004835D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5EBB818EDC8D5004835D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5EBC618EDC8D5004835D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D5EB9218EDC8D5004835D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5EBB018EDC8D5004835D7 /* WNKFirstViewController.m in Sources */,
+				B6D5EBA618EDC8D5004835D7 /* main.m in Sources */,
+				B6D5EBAA18EDC8D5004835D7 /* WNKAppDelegate.m in Sources */,
+				B6D5EBB318EDC8D5004835D7 /* WNKSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D5EBB618EDC8D5004835D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5EBC818EDC8D5004835D7 /* WinkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6D5EBC018EDC8D5004835D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D5EB9518EDC8D5004835D7 /* Wink */;
+			targetProxy = B6D5EBBF18EDC8D5004835D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6D5EBA218EDC8D5004835D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D5EBA318EDC8D5004835D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6D5EBAB18EDC8D5004835D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D5EBAC18EDC8D5004835D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6D5EBC418EDC8D5004835D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D5EBC518EDC8D5004835D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D5EBC918EDC8D5004835D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6D5EBCA18EDC8D5004835D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D5EBCC18EDC8D5004835D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				INFOPLIST_FILE = "Wink/Wink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6D5EBCD18EDC8D5004835D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				INFOPLIST_FILE = "Wink/Wink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B6D5EBCF18EDC8D5004835D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wink.app/Wink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WinkTests/WinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B6D5EBD018EDC8D5004835D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wink.app/Wink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				INFOPLIST_FILE = "WinkTests/WinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D5EB9118EDC8D5004835D7 /* Build configuration list for PBXProject "Wink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5EBC918EDC8D5004835D7 /* Debug */,
+				B6D5EBCA18EDC8D5004835D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D5EBCB18EDC8D5004835D7 /* Build configuration list for PBXNativeTarget "Wink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5EBCC18EDC8D5004835D7 /* Debug */,
+				B6D5EBCD18EDC8D5004835D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6D5EBCE18EDC8D5004835D7 /* Build configuration list for PBXNativeTarget "WinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5EBCF18EDC8D5004835D7 /* Debug */,
+				B6D5EBD018EDC8D5004835D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6D5EB8E18EDC8D5004835D7 /* Project object */;
+}
