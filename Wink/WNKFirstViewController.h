@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MultipeerConnectivity/MultipeerConnectivity.h>
+#import "WNKMCFManager.h"
 
 @interface WNKFirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) UITableView *firstTableView;
+@property (strong, nonatomic) IBOutlet UITableView *firstTableView;
+@property (strong, nonatomic) WNKMCFManager *manager;
+
+- (void)addNewPeer:(MCPeerID *)peerID;
+- (void)removePeer:(MCPeerID *)peerID;
+
+//- (IBAction)sendMessage;
 
 @end

@@ -7,7 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MultipeerConnectivity/MultipeerConnectivity.h>
+@class WNKFirstViewController;
 
-@interface WNKMCFManager : NSObject
+@interface WNKMCFManager : NSObject <MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate,MCSessionDelegate>
+
+@property (strong, nonatomic) MCPeerID *myPeerID;
+@property (strong, nonatomic) NSString *serviceName;
+@property (strong, nonatomic) MCNearbyServiceAdvertiser *advertiser;
+@property (strong, nonatomic) MCNearbyServiceBrowser *browser;
+@property (strong, nonatomic) MCSession *session;
+@property (strong, nonatomic) NSMutableArray *connectedPeers;
+@property (strong, nonatomic) NSMutableArray *foundedPeers;
+@property (nonatomic) WNKFirstViewController *parentController;
+
+- (id)initWithID:(NSString *)uid andServiceName:(NSString *)servName;
+//- (void)presentBrowser;
+- (void)sendSomeMessageDataTo:(MCPeerID *)peerID;
 
 @end

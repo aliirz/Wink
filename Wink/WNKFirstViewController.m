@@ -18,12 +18,37 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _manager = [[WNKMCFManager alloc] initWithID:[[UIDevice currentDevice] name]  andServiceName:@"WNK-iconchat"];
+    _manager.parentController = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Custom Methods
+
+- (void)addNewPeer:(MCPeerID *)peerID;
+{
+    NSArray *insertIndexPaths = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:([_manager.connectedPeers count]-1) inSection:0], nil];
+    
+    [_firstTableView beginUpdates];
+    [_firstTableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationNone];
+    [_firstTableView endUpdates];
+}
+
+- (void)removePeer:(MCPeerID *)peerID
+{
+    NSArray *deleteIndexPaths = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:[_manager.connectedPeers indexOfObject:peerID] inSection:0], nil];
+    
+    // remove the object from connectedPeers array here not in the calling method.
+    
+    [_firstTableView beginUpdates];
+    [_firstTableView deleteRowsAtIndexPaths:deleteIndexPaths withRowAnimation:UITableViewRowAnimationNone];
+    [_firstTableView endUpdates];
 }
 
 #pragma mark - Table View Data Source
@@ -37,19 +62,25 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    //NSLog(@"Row count: %ul", [_manager.connectedPeers count]);
+    //return [_manager.connectedPeers count];
+    NSLog(@"Row count: %d", [_manager.foundedPeers count]);
+    return [_manager.foundedPeers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier1 = @"CellIdentifier";
+    static NSString *CellIdentifier = @"CellIdentifier";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier1];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier1];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"Me"];
+    
+    MCPeerID *peerID = [_manager.foundedPeers objectAtIndex:indexPath.row];
+    //MCPeerID *peerID = [_manager.connectedPeers objectAtIndex:indexPath.row];
+    cell.textLabel.text = peerID.displayName;
     return cell;
 }
 
@@ -103,8 +134,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    MCPeerID *peerID = [_manager.foundedPeers objectAtIndex:indexPath.row];
+    [_manager.browser invitePeer:peerID toSession:_manager.session withContext:nil timeout:30];
+    [_manager sendSomeMessageDataTo:peerID];
+    
     // The below command immediately deselects the row before the selected state of cell is even displayed.
-    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 /*
