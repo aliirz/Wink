@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WNKFirstViewController : UIViewController
+@interface WNKFirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) UITableView *firstTableView;
 
 @end

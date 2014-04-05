@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B693689C18F0571900AE85C4 /* WNKMCFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B693689B18F0571900AE85C4 /* WNKMCFManager.m */; };
 		B6D5EB9A18EDC8D5004835D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9918EDC8D5004835D7 /* Foundation.framework */; };
 		B6D5EB9C18EDC8D5004835D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9B18EDC8D5004835D7 /* CoreGraphics.framework */; };
 		B6D5EB9E18EDC8D5004835D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9D18EDC8D5004835D7 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B693689A18F0571900AE85C4 /* WNKMCFManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKMCFManager.h; sourceTree = "<group>"; };
+		B693689B18F0571900AE85C4 /* WNKMCFManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKMCFManager.m; sourceTree = "<group>"; };
 		B6D5EB9618EDC8D5004835D7 /* Wink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D5EB9918EDC8D5004835D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6D5EB9B18EDC8D5004835D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				B6D5EBAB18EDC8D5004835D7 /* Main.storyboard */,
 				B6D5EBAE18EDC8D5004835D7 /* WNKFirstViewController.h */,
 				B6D5EBAF18EDC8D5004835D7 /* WNKFirstViewController.m */,
+				B693689A18F0571900AE85C4 /* WNKMCFManager.h */,
+				B693689B18F0571900AE85C4 /* WNKMCFManager.m */,
 				B6D5EBB118EDC8D5004835D7 /* WNKSecondViewController.h */,
 				B6D5EBB218EDC8D5004835D7 /* WNKSecondViewController.m */,
 				B6D5EBB418EDC8D5004835D7 /* Images.xcassets */,
@@ -258,6 +263,7 @@
 				B6D5EBB018EDC8D5004835D7 /* WNKFirstViewController.m in Sources */,
 				B6D5EBA618EDC8D5004835D7 /* main.m in Sources */,
 				B6D5EBAA18EDC8D5004835D7 /* WNKAppDelegate.m in Sources */,
+				B693689C18F0571900AE85C4 /* WNKMCFManager.m in Sources */,
 				B6D5EBB318EDC8D5004835D7 /* WNKSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +469,7 @@
 				B6D5EBCD18EDC8D5004835D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6D5EBCE18EDC8D5004835D7 /* Build configuration list for PBXNativeTarget "WinkTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +478,7 @@
 				B6D5EBD018EDC8D5004835D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
