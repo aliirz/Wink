@@ -62,10 +62,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    //NSLog(@"Row count: %ul", [_manager.connectedPeers count]);
-    //return [_manager.connectedPeers count];
-    NSLog(@"Row count: %d", [_manager.foundedPeers count]);
-    return [_manager.foundedPeers count];
+    NSLog(@"Row count: %lu", (unsigned long)[_manager.connectedPeers count]);
+    return [_manager.connectedPeers count];
+    //NSLog(@"Row count: %d", [_manager.foundedPeers count]);
+    //return [_manager.foundedPeers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -78,8 +78,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    MCPeerID *peerID = [_manager.foundedPeers objectAtIndex:indexPath.row];
-    //MCPeerID *peerID = [_manager.connectedPeers objectAtIndex:indexPath.row];
+    //MCPeerID *peerID = [_manager.foundedPeers objectAtIndex:indexPath.row];
+    MCPeerID *peerID = [_manager.connectedPeers objectAtIndex:indexPath.row];
     cell.textLabel.text = peerID.displayName;
     return cell;
 }
@@ -134,8 +134,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MCPeerID *peerID = [_manager.foundedPeers objectAtIndex:indexPath.row];
-    [_manager.browser invitePeer:peerID toSession:_manager.session withContext:nil timeout:30];
+    //MCPeerID *peerID = [_manager.foundedPeers objectAtIndex:indexPath.row];
+    //[_manager.browser invitePeer:peerID toSession:_manager.session withContext:nil timeout:30];
+    
+    MCPeerID *peerID = [_manager.connectedPeers objectAtIndex:indexPath.row];
     [_manager sendSomeMessageDataTo:peerID];
     
     // The below command immediately deselects the row before the selected state of cell is even displayed.

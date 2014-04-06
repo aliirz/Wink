@@ -111,16 +111,26 @@
     {
         [_foundedPeers addObject:peerID];
     }
-    //[browser invitePeer:peerID toSession:_session withContext:nil timeout:30];
-    [_parentController.firstTableView reloadData];
+    
+    // Generate random time interval before sending an invite. (in milliseconds)
+
+    /*
+    int time = (arc4random_uniform(30))+1; //Generates Number from 1 to 30.
+    //sleep(number/100);
+    double timeInMS = (time/1000);
+    NSLog(@"Sleep time is: %f", timeInMS);
+    [NSThread sleepForTimeInterval:time];
+     */
+    
+    [browser invitePeer:peerID toSession:_session withContext:nil timeout:30];
+    //[_parentController.firstTableView reloadData];
 }
 
 
 - (void)browser:(MCNearbyServiceBrowser *)browser lostPeer:(MCPeerID *)peerID
 {
     [_foundedPeers removeObject:peerID];
-    //[browser invitePeer:peerID toSession:_session withContext:nil timeout:30];
-    [_parentController.firstTableView reloadData];
+    //[_parentController.firstTableView reloadData];
 }
 
 #pragma mark - MCSessionDelegate Methods
@@ -143,6 +153,8 @@
             [_connectedPeers addObject:peerID];
         }
         //[_parentController addNewPeer:peerID];
+        
+        [_parentController.firstTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
         //[_parentController.firstTableView reloadData];
     }
     else if (state == MCSessionStateNotConnected)
@@ -150,6 +162,8 @@
         NSLog(@"Disconnected from %@.", peerID);
         [_connectedPeers removeObject:peerID];
         //[_parentController removePeer:peerID];
+        
+        [_parentController.firstTableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
         //[_parentController.firstTableView reloadData];
     }
     else
