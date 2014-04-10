@@ -137,8 +137,15 @@
 
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
 {
-    NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"Message received: %@", message);
+    //NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    //NSLog(@"Message received: %@", message);
+    
+    NSDictionary *dict = @{@"data": data,
+                           @"peerID": peerID};
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"WNKMCFDidReceiveDataNotification"
+                                                        object:nil
+                                                      userInfo:dict];
     
     //dispatch_async(dispatch_get_main_queue(), ^{[_parentController.receivedLabel setText:message];});
 }

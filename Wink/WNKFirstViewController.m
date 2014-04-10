@@ -7,8 +7,12 @@
 //
 
 #import "WNKFirstViewController.h"
+#import "WNKChatViewController.h"
 
 @interface WNKFirstViewController ()
+
+@property (strong, nonatomic) MCPeerID *selectedPeerID;
+@property (weak, nonatomic) WNKChatViewController *chatController;
 
 @end
 
@@ -138,7 +142,9 @@
     //[_manager.browser invitePeer:peerID toSession:_manager.session withContext:nil timeout:30];
     
     MCPeerID *peerID = [_manager.connectedPeers objectAtIndex:indexPath.row];
-    [_manager sendSomeMessageDataTo:peerID];
+    //[_manager sendSomeMessageDataTo:peerID];
+    
+    _chatController.chatPeerID = peerID;
     
     // The below command immediately deselects the row before the selected state of cell is even displayed.
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -155,5 +161,16 @@
  }
 */
 
+
+#pragma mark - Modal
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"FirstToChat"])
+    {
+        _chatController = [segue destinationViewController];
+        _chatController.parentController = self;
+    }
+}
 
 @end

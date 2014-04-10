@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B683325118F5103700BEC9D0 /* WNKChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B683325018F5103700BEC9D0 /* WNKChatViewController.m */; };
 		B693689C18F0571900AE85C4 /* WNKMCFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B693689B18F0571900AE85C4 /* WNKMCFManager.m */; };
 		B693689E18F0587E00AE85C4 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B693689D18F0587E00AE85C4 /* MultipeerConnectivity.framework */; };
+		B6CDBC4218F5BB6800C373DD /* WNKUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CDBC4118F5BB6800C373DD /* WNKUserObject.m */; };
+		B6CDBC4518F5BD1B00C373DD /* WNKPeerID.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CDBC4418F5BD1B00C373DD /* WNKPeerID.m */; };
 		B6D5EB9A18EDC8D5004835D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9918EDC8D5004835D7 /* Foundation.framework */; };
 		B6D5EB9C18EDC8D5004835D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9B18EDC8D5004835D7 /* CoreGraphics.framework */; };
 		B6D5EB9E18EDC8D5004835D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D5EB9D18EDC8D5004835D7 /* UIKit.framework */; };
@@ -37,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B683324F18F5103700BEC9D0 /* WNKChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKChatViewController.h; sourceTree = "<group>"; };
+		B683325018F5103700BEC9D0 /* WNKChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKChatViewController.m; sourceTree = "<group>"; };
 		B693689A18F0571900AE85C4 /* WNKMCFManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKMCFManager.h; sourceTree = "<group>"; };
 		B693689B18F0571900AE85C4 /* WNKMCFManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKMCFManager.m; sourceTree = "<group>"; };
 		B693689D18F0587E00AE85C4 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		B6CDBC4018F5BB6800C373DD /* WNKUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKUserObject.h; sourceTree = "<group>"; };
+		B6CDBC4118F5BB6800C373DD /* WNKUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKUserObject.m; sourceTree = "<group>"; };
+		B6CDBC4318F5BD1B00C373DD /* WNKPeerID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKPeerID.h; sourceTree = "<group>"; };
+		B6CDBC4418F5BD1B00C373DD /* WNKPeerID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKPeerID.m; sourceTree = "<group>"; };
 		B6D5EB9618EDC8D5004835D7 /* Wink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D5EB9918EDC8D5004835D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6D5EB9B18EDC8D5004835D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,8 +138,14 @@
 				B6D5EBAF18EDC8D5004835D7 /* WNKFirstViewController.m */,
 				B693689A18F0571900AE85C4 /* WNKMCFManager.h */,
 				B693689B18F0571900AE85C4 /* WNKMCFManager.m */,
+				B683324F18F5103700BEC9D0 /* WNKChatViewController.h */,
+				B683325018F5103700BEC9D0 /* WNKChatViewController.m */,
 				B6D5EBB118EDC8D5004835D7 /* WNKSecondViewController.h */,
 				B6D5EBB218EDC8D5004835D7 /* WNKSecondViewController.m */,
+				B6CDBC4318F5BD1B00C373DD /* WNKPeerID.h */,
+				B6CDBC4418F5BD1B00C373DD /* WNKPeerID.m */,
+				B6CDBC4018F5BB6800C373DD /* WNKUserObject.h */,
+				B6CDBC4118F5BB6800C373DD /* WNKUserObject.m */,
 				B6D5EBB418EDC8D5004835D7 /* Images.xcassets */,
 				B6D5EBA018EDC8D5004835D7 /* Supporting Files */,
 			);
@@ -264,11 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CDBC4218F5BB6800C373DD /* WNKUserObject.m in Sources */,
 				B6D5EBB018EDC8D5004835D7 /* WNKFirstViewController.m in Sources */,
+				B683325118F5103700BEC9D0 /* WNKChatViewController.m in Sources */,
 				B6D5EBA618EDC8D5004835D7 /* main.m in Sources */,
 				B6D5EBAA18EDC8D5004835D7 /* WNKAppDelegate.m in Sources */,
 				B693689C18F0571900AE85C4 /* WNKMCFManager.m in Sources */,
 				B6D5EBB318EDC8D5004835D7 /* WNKSecondViewController.m in Sources */,
+				B6CDBC4518F5BD1B00C373DD /* WNKPeerID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
 				INFOPLIST_FILE = "Wink/Wink-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,6 +428,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
 				INFOPLIST_FILE = "Wink/Wink-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
